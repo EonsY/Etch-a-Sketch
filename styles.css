@@ -1,3 +1,8 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Title*/
 .title {
     text-align: center;
     padding: 25px;
@@ -8,36 +13,59 @@
     margin: 0;
 }
 
+/*Flex*/
+.main {
+    display: flex;
+}
+
+.grid-flex {
+    display: flex;
+    flex: 2 1 auto;
+    width: 66.66vw;
+}
+
+/*Grid*/
 #grid-container {
     display: grid;
-    grid-template-columns: repeat(16, auto);
 
     height: 500px;
     width: 500px;
-    margin: auto;
+    text-align: left;
     border: 2px solid rgba(0, 0, 0, 0.8);
 }
 
-.grid-item {
-    padding: 10px;
+/*Button*/
+.interface {
+    display: flex;
+    flex: 1 1 auto;
+    width: 33.33vw;
 }
 
-#button-container {
-    text-align: right;
-    margin: 7.5px auto auto auto;
-    width: 500px;
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: auto;
 }
 
-.clear-all {
+.interface-button {
     border: 0;
     color: azure;
     background-color: rgba(0, 0, 0, 0.8);
-    padding: 10px 20px;
+    border: 2px solid azure;
+    padding: 10px 25px;
     font-size: 20px;
     border-radius: 15px;
+    transition: 0.25s;
 }
 
-/*Colouring*/
+.interface-button:hover {
+    color: rgba(0, 0, 0, 0.8);
+    background-color: azure;
+    border: 2px solid rgba(0, 0, 0, 0.8);
+}
+
+/*Coloring*/
 .coloured {
     background-color: rgba(0, 0, 0, 0.8);
 }

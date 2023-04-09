@@ -1,5 +1,6 @@
 * {
     font-family: 'Roboto', sans-serif;
+    background-color: azure;
 }
 
 /*Title*/
@@ -11,6 +12,8 @@
 .title > * {
     padding: 0;
     margin: 0;
+    font-size: 5rem;
+    color: rgba(0, 0, 0, 0.8);
 }
 
 /*Flex*/
@@ -28,17 +31,18 @@
 #grid-container {
     display: grid;
 
+    background-color: white;
     height: 500px;
     width: 500px;
     text-align: left;
-    border: 2px solid rgba(0, 0, 0, 0.8);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /*Button*/
 .interface {
     display: flex;
     flex: 1 1 auto;
-    width: 33.33vw;
+    width: 33.34vw;
 }
 
 .button-container {
@@ -63,9 +67,4 @@
     color: rgba(0, 0, 0, 0.8);
     background-color: azure;
     border: 2px solid rgba(0, 0, 0, 0.8);
-}
-
-/*Coloring*/
-.coloured {
-    background-color: rgba(0, 0, 0, 0.8);
 }
